@@ -44,7 +44,7 @@ const Part1 = () => {
   }
 
   function decrement(val){
-    if(val==0){
+    if(val===0){
       setVal(reviews.length-1)
     } else {
       setVal(val-1)
@@ -66,12 +66,12 @@ const Part1 = () => {
           </p>
         </div>
         <ul className='reviews flex justify-center items-center space-x-4 py-5'>
-          <li><img src={images.google} /></li>
-          <li><img src={images.sitejabber}/></li>
-          <li><img src={images.trustpilot} /></li>
-          <li><img src={images.yelp} /></li>
-          <li><img src={images.yell} /></li>
-          <li><img src={images.fb} /></li>
+          <li><img src={images.google} alt='google' /></li>
+          <li><img src={images.sitejabber} alt='sitejabber'/></li>
+          <li><img src={images.trustpilot} alt='trustpilot' /></li>
+          <li><img src={images.yelp} alt='yelp' /></li>
+          <li><img src={images.yell} alt='yell' /></li>
+          <li><img src={images.fb} alt='fb' /></li>
         </ul>
         <div className='text-center'>
           <h1 className='text-4xl py-5 text-yellow-600 font-medium'>We specialise in Essays, Assignments, Courseworks, Online exams, and Dissertation Writing Services, Since 2001!</h1>
@@ -81,7 +81,7 @@ const Part1 = () => {
         </div>
         <div className='flex flex-col items-center'> 
           <h2 className=' text-center text-4xl py-8'>Just Sit Back Relax & Consider Your Work Done!!</h2>
-          <img src={images.order} width={250}/>
+          <img src={images.order} width={250} alt='order'/>
         </div>
         <div>
           <p>Projectsdeal is the <b>best dissertation writing services in the UK</b>, with all 5 star reviews. Our team of experienced British writers will craft your dissertation with a research-oriented approach, ensuring exceptional quality. Our dissertation writers will diligently work on your dissertation, making it engaging and captivating, ultimately helping you score distinction. Projectsdeal has years of experience in the industry, making it one of the top dissertation writing service in UK. All of our dissertation helpers are veteran writers and research experts with several years of expertise. We are hailed as the best dissertation help for providing PhD thesis, assignments and essay writing.</p>
@@ -89,18 +89,18 @@ const Part1 = () => {
         <div className='featurediv flex'>
           <iframe width="590" height="330" src="https://www.youtube-nocookie.com/embed/YVbMIIdpvWQ?si=W3CEewKq_iwD_QCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <ul className='features'>
-            <li><img src={images.check}/>Established 2001</li>
-            <li><img src={images.check}/>24 Years of Successful Track Record</li>
-            <li><img src={images.check}/>PhD Qualified Writers</li>
-            <li><img src={images.check}/>Top Notch Quality</li>
-            <li><img src={images.check}/>Enjoy Full Confidentiality</li>
-            <li><img src={images.check}/>Plagiarism Free</li>
-            <li><img src={images.check}/>Free Unlimited Revisions</li>
-            <li><img src={images.check}/>Professional Project Management</li>
-            <li><img src={images.check}/>5 star Reviews on Google, SiteJabber, TrustPilot</li>
-            <li><img src={images.check}/>600+ Domain Experts</li>
-            <li><img src={images.check}/>46 Project Coordinators</li>
-            <li><img src={images.check}/>Guaranteed Grades</li>
+            <li><img src={images.check} alt='check'/>Established 2001</li>
+            <li><img src={images.check} alt='check'/>24 Years of Successful Track Record</li>
+            <li><img src={images.check} alt='check'/>PhD Qualified Writers</li>
+            <li><img src={images.check} alt='check'/>Top Notch Quality</li>
+            <li><img src={images.check} alt='check'/>Enjoy Full Confidentiality</li>
+            <li><img src={images.check} alt='check'/>Plagiarism Free</li>
+            <li><img src={images.check} alt='check'/>Free Unlimited Revisions</li>
+            <li><img src={images.check} alt='check'/>Professional Project Management</li>
+            <li><img src={images.check} alt='check'/>5 star Reviews on Google, SiteJabber, TrustPilot</li>
+            <li><img src={images.check} alt='check'/>600+ Domain Experts</li>
+            <li><img src={images.check} alt='check'/>46 Project Coordinators</li>
+            <li><img src={images.check} alt='check'/>Guaranteed Grades</li>
           </ul>
         </div>
 
@@ -124,22 +124,22 @@ const Part1 = () => {
           <h1 className=' text-4xl text-center text-sky-700 py-8'>What makes Projectsdeal UK #1 Dissertation Writing Service</h1>
           <div className='services'>
             <div>
-              <img src={images.like2} className=' rounded-full'/>
+              <img src={images.like2} className=' rounded-full' alt='like2'/>
               <h2>Premium Quality</h2>
               <p>Projectsdeal is Gold Standard in Academic Research & Writing</p>
             </div>
             <div>
-              <img src={images.restrict} className=' rounded-full'/>
+              <img src={images.restrict} className=' rounded-full' alt='restrict'/>
               <h2>Plagiarism Free</h2>
               <p>Use Official License of Turnitin to Validate  &lt; 6% plagiarism</p>
             </div>
             <div>
-              <img src={images.timer} className=' rounded-full'/>
+              <img src={images.timer} className=' rounded-full' alt='timer'/>
               <h2>Meeting Deadline</h2>
               <p>Projectsdeal team values on-time submission. We deliver before the deadline. Relax!</p>
             </div>
             <div>
-              <img src={images.lock} className=' rounded-full'/>
+              <img src={images.lock} className=' rounded-full' alt='lock'/>
               <h2>100% Privacy</h2>
               <p>Follow Strict Code of Confidentiality. We are known for HIGH Business Ethics.</p>
             </div>
@@ -147,22 +147,22 @@ const Part1 = () => {
 
           <div className='services'>
             <div>
-              <img src={images.doller} className=' rounded-full'/>
+              <img src={images.doller} className=' rounded-full' alt='doller'/>
               <h2>Affordable Prices</h2>
               <p>Every year if more than 80% of your own class can afford it, you can surely! Your work be worth every pound spend.</p>
             </div>
             <div>
-              <img src={images.phone} className=' rounded-full'/>
+              <img src={images.phone} className=' rounded-full' alt='phone'/>
               <h2>Dedicated Team</h2>
               <p>Dedicated Personal Managers to ensure high level of service experience.</p>
             </div>
             <div>
-              <img src={images.doc2} className=' rounded-full'/>
+              <img src={images.doc2} className=' rounded-full' alt='doc2'/>
               <h2>Free Revision</h2>
               <p>We understand that your supervisor is our client! We prioritize your success above all else, so feel free to request any number of modifications.</p>
             </div>
             <div>
-              <img src={images.payback} className=' rounded-full'/>
+              <img src={images.payback} className=' rounded-full' alt='payback'/>
               <h2>Payback Guarantee</h2>
               <p>Our Terms & Conditions are designed with Fair Usage and SOLID Guarantees to ensure success! Result is all that matters!</p>
             </div>
@@ -178,7 +178,7 @@ const Part1 = () => {
             <li>3. Select the final submission date</li>
             <li>4. Get instant pricing</li>
           </ul>
-          <img src={images.pricing}/>
+          <img src={images.pricing} alt='pricing'/>
         </div>
         
 
@@ -225,22 +225,22 @@ const Part1 = () => {
           <div className='cardsdiv flex'>
             <div className='cards flex justify-center'>
               <div className='card-box'>
-                <img src={images.like}/>
+                <img src={images.like} alt='like'/>
                 <p className='text-center'>Ask any 5 of your Own Classmates & we bet at least 3 of them would already be our clients!</p>
               </div>
               <div className='card-box'>
-                <img src={images.doc}/>
+                <img src={images.doc} alt='doc'/>
                 <p className='text-center'>Over 96% of our clients have scored Merits & Distinctions Since 2001, It's effortless now!</p>
               </div>
             </div>
 
             <div className='cards flex justify-center'>
               <div className='card-box'>
-                <img src={images.g100}/>
+                <img src={images.g100} alt='g100'/>
                 <p className='text-center'>Intermediate drafts & Unlimited number of Revisions to flawlessly meet the Supervisors thought process</p>
               </div>
               <div className='card-box'>
-                <img src={images.clock}/>
+                <img src={images.clock} alt='clock'/>
                 <p className='text-center'>100% Confidentiality, 0% Plagiarism on turnitin, Get Ready for Submission Work</p>
               </div>
             </div>
@@ -271,14 +271,14 @@ const Part1 = () => {
 
         <div className='py-3'>
           <div>
-            <h1 className='text-center text-3xl text-yellow-600'>Awarded Best Dissertation Writing Service in the UK - Press Recognition</h1>
+            <h1 className='text-center text-3xl text-yellow-600'>Awarded Best Dissertation Writing Service in the UK - <span className=' text-lg text-blue-800'>Press Recognition</span></h1>
           </div>
           <div className='press gap-2 pt-10'>
-            <img src={images.yahoo}/>
-            <img src={images.bbc}/>
-            <img src={images.khaleej}/>
-            <img src={images.guardian}/>
-            <img src={images.benzinga}/>
+            <img src={images.yahoo}  alt='yahoo'/>
+            <img src={images.bbc} alt='bbc'/>
+            <img src={images.khaleej} alt='khaleej'/>
+            <img src={images.guardian} alt='guardian'/>
+            <img src={images.benzinga} alt='benzinga'/>
           </div>
         </div>
 
@@ -289,7 +289,7 @@ const Part1 = () => {
           </div>
           <div>
             <p>Can someone write my dissertation if I do not have the project title?</p>
-            <p>We first have to define the precise research title for your research. Meaning we must start by narrowing down your exact area of research and consolidate that into a meaningful dissertation title. After that you have to get it approved from your supervisor. Once the Dissertation title is approved we can start with the Dissertation Proposal. The Dissertation Proposal must have a very clearly defined Aim of our research, followed by perfectly established research objectives we need to meet by the end of our research and clear Research Questions. We need latest references from important journals and identify right authors to refer to. This is what we do, we continuously research and write Dissertations and Research papers and hence we give you full leverage of our expertise. Please  WhatsApp +44 7447882377 and we shall personally have a detailed discussion and help you more meaningfully.</p>
+            <p>We first have to define the precise research title for your research. Meaning we must start by narrowing down your exact area of research and consolidate that into a meaningful dissertation title. After that you have to get it approved from your supervisor. Once the Dissertation title is approved we can start with the Dissertation Proposal. The Dissertation Proposal must have a very clearly defined Aim of our research, followed by perfectly established research objectives we need to meet by the end of our research and clear Research Questions. We need latest references from important journals and identify right authors to refer to. This is what we do, we continuously research and write Dissertations and Research papers and hence we give you full leverage of our expertise. Please <span className='p-2 bg-green-500 rounded-md text-white'><a href='#'>WhatsApp +44 7447882377</a></span> and we shall personally have a detailed discussion and help you more meaningfully.</p>
           </div>
           <div>
             <p>Can you please brief me about the process?</p>
@@ -353,7 +353,7 @@ const Part1 = () => {
 
         <div className='flex flex-col justify-center items-center py-8'>
           <h2 className='text-4xl font-semibold py-4'>Just Sit Back Relax & Consider Your Work Done!!</h2>
-          <img src={images.pricing}/>
+          <img src={images.pricing} alt='pricing'/>
         </div>
 
     </div>

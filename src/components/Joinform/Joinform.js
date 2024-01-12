@@ -6,15 +6,17 @@ import './Joinform.css'
 const Joinform = () => {
   return (
     <div className='maindiv flex w-full justify-end mx-40'>
-      <div className='student'>
-          <img src={images.student} className=' object-contain'/>
+      
+      <div className='student flex items-center'>
+          <img src={images.student} className=' object-contain h-[500px]' alt='student'/>
       </div>
-      <div className='joinform flex flex-col justify-center items-center py-6 rounded-md'>
-        <div className='flex '>
-          <img src={images.tick} className=' object-contain px-2'/>
-          <h2 className=' text-yellow-500 font-bold text-3xl '>Calculate Pricing</h2>
+      <div className='joinform relative flex flex-col justify-center items-center pt-20 pb-8 rounded-md'>
+        <img src={images.offer} className=' w-44 absolute -top-4 left-0'/>
+        <div className='flex'>
+          <img src={images.tick} className=' object-contain px-2' alt='tick'/>
+          <h2 className=' text-yellow-500 font-bold text-3xl'>Calculate Pricing</h2>
         </div>
-        <p className='py-3 text-white'>Just Select Correct Options and Calculate Best Price</p>
+        <p className='py-3 text-white text-center'>Just Select Correct Options and Calculate Best Price</p>
         <div className=' flex flex-col justify-center items-center space-y-6 px-2 w-full'>
         {/* 1 */}
           <select className="select select-bordered select-sm w-full max-w-lg">
@@ -62,11 +64,11 @@ const Joinform = () => {
             }
           </select>
 
-          <input type='email' placeholder='Email id:' className=' max-w-lg w-full rounded-md' required/>
-          <input type='tel' placeholder='Valid mobile number:' className=' max-w-lg w-full rounded-md' required/>
-          <input type='email' placeholder='Deadline: dd/mm/yy' className=' max-w-lg w-full rounded-md' required />
+          <input type='email' placeholder='Email id:' className=' max-w-lg w-full rounded-md px-2 pt-1' required/>
+          <input type='tel' placeholder='Valid mobile number:' className=' max-w-lg w-full rounded-md px-2 pt-1' required/>
+          <input type='email' placeholder='Deadline: dd/mm/yy' className=' max-w-lg w-full rounded-md px-2 pt-1' required />
 
-          <button className=' flex bg-yellow-600 px-5 py-2 font-bold text-white rounded-md'>Click To Calculate <img src={images.calicon}/></button>
+          <button className=' flex bg-yellow-600 px-5 py-2 font-bold text-white rounded-md'>Click To Calculate <img src={images.calicon} alt='calculator'/></button>
           <p className='font-bold text-lg text-white'>Result is all that Matters!</p>
         </div>
       </div>

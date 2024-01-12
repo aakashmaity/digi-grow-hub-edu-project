@@ -25,3 +25,22 @@
         width: 70%;
     }
 }
+
+@media (max-width:991px){
+    .joinform{
+        padding: 80px 20px 0px 20px;
+    }
+}
+
+@media (max-width:499px){
+    .joinform{
+        padding-bottom: 20px;
+    }
+    .joinform div select {
+        width: 100%;
+    }
+
+    .joinform div input {
+        width: 100%;
+    }
+}

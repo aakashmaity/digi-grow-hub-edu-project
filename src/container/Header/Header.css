@@ -37,6 +37,7 @@
         height: 40vh;
         overflow: scroll;
         z-index: 100;
+        position: relative;
     } 
   
 }
