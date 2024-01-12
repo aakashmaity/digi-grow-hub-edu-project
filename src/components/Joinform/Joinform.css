@@ -1,0 +1,27 @@
+.joinform{
+    background-color: rgba(0, 0, 0, 0.7);
+    /* padding: 10px 2px 2px 10px; */
+    /* margin-bottom: 40px; */
+    /* text-align: center; */
+    width: 50vw;
+}
+
+@media (max-width:765px) {
+    .student{
+        display: none;
+    }
+    .joinform{
+        width: 100%;
+        margin: 80px 5px 0px 5px;
+    }
+    .maindiv{
+        width: 100%;
+        margin: 0px 20px 0px 20px;
+    }
+    .joinform div select{
+        width: 70%;
+    }
+    .joinform div input{
+        width: 70%;
+    }
+}

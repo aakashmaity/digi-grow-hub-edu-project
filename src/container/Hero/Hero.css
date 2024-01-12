@@ -1,0 +1,13 @@
+@media (max-width:991px) {
+    .herl{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:765px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

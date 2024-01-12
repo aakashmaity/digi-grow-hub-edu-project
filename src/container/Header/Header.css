@@ -1,0 +1,42 @@
+.menu{
+    background-color: #ddd ;
+    /* border: 1px solid black; */
+    display: none;
+}
+.navbar-menu{
+    display: none;
+}
+
+
+
+@media (max-width:991px) {
+    .ad{
+        display: none;
+    }
+}
+
+@media (max-width:765px){
+    .navbar-link{
+        display: none;
+    }
+    .menu{
+        display:block;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    .menu img{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-menu{
+        display: block;
+        background-color: rgb(234 179 8);
+        height: 40vh;
+        overflow: scroll;
+        z-index: 100;
+    } 
+  
+}

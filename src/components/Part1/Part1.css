@@ -1,0 +1,138 @@
+
+
+.reviews li{
+    width: 350px;
+    object-fit: fill;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.7rem
+}
+.features li{
+    display: flex;
+}
+
+.services{
+    display: flex; 
+    /* flex: 1; */
+    /* flex-wrap: wrap; */
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+}
+.services div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+.services div p{
+    text-align: center;
+    font-size: medium;
+}
+.services div h2{
+    font-weight: 700;
+    font-size:x-large;
+    padding-top: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.card-box{
+    background-color: #263d5b;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+
+.press {
+    display: flex;
+    flex: 1;
+}
+.press img {
+    object-fit: contain;
+    width:18%;
+}
+.help div{
+    margin: 10px 10px 10px 30px
+}
+.help div div h3{
+    font-weight: 700;
+}
+
+@media (max-width:991px) {
+    .featurediv{
+        flex-direction: column;
+    }
+    iframe {
+        width: 100%;
+    }
+    .features{
+        padding-top: 30px;
+    }
+
+    .cardsdiv{
+        flex-direction: column;
+    }
+    .help{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    iframe{
+        height: 215px;
+    }
+}
+
+@media (max-width:765px) {
+    .reviews {
+        flex-direction: column;
+    }
+    .reviews li{
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+        padding: 0px;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .services div{
+        padding-top: 18px;
+    }
+
+}
+
+
+@media (max-width:499px){
+    .cards{
+        width: 100%;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 30px;
+        padding-left: 0px;
+    }
+    .card-box{
+        width: 100%;
+        padding: 20px;
+    }
+    .help div{
+        margin: 0px;
+    }
+}
